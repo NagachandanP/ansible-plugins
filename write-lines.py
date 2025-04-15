@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import time
 
-file_path = '/home/omnia/v4-test-progress/monitored_file.txt'
+file_path = 'monitored_file.txt'
 
 for i in range(1, 6):
     msg = f"Line {i}: hiiii"
