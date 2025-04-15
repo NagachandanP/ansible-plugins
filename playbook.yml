@@ -1,0 +1,16 @@
+- name: Monitor and stream output from Python script
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name:  debug1
+      debug: 
+        msg: "hai sunday ,  im waiting for u!!!"
+      
+    - name: monitor python script output
+      shell: python3 /home/omnia/v4-test-progress/write-lines.py
+      
+
+    - name: debug2
+      debug: 
+        msg: "hai saturday ,  its me!!!"
