@@ -17,7 +17,7 @@ class CallbackModule(CallbackBase):
         super(CallbackModule, self).__init__()
         self.monitor_thread = None
         self.stop_monitoring = threading.Event()
-        self.file_to_monitor = '/home/omnia/v4-test-progress/monitored_file.txt'
+        self.file_to_monitor = 'monitored_file.txt'
 
     def v2_runner_on_start(self, host, task):
         task_name = task.get_name().strip().lower()
